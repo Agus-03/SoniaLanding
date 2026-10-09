@@ -1,49 +1,58 @@
-# SONIA — Landing de validación
 
-Landing orientada a validar interés por el programa Early Adopter.
+# SONIA — Orquestación Conversacional Inteligente
 
-## Diseño
+SONIA es una propuesta de inteligencia artificial conversacional orientada a ayudar a pequeñas y medianas empresas a gestionar sus conversaciones con clientes de manera más fluida, organizada y contextual.
 
-La implementación toma del Manual de Marca:
-- Verde Bosque Profundo `#0E311F`
-- Menta Suave `#DDF4ED`
-- Turquesa `#3FD0D5`
-- Azul Noche `#01111D`
-- Blanco Nieve `#F5FFF9`
-- Clear Sans para títulos/cuerpo
-- Flatory Serif reservado para el lenguaje visual del logotipo
+## Estado del proyecto
 
-## Ejecutar localmente
+La landing page se encuentra en una etapa de validación de interés y demanda. El programa Early Adopter todavía no está habilitado.
 
-Requiere Python 3:
+## Tecnologías
+
+- Python
+- Streamlit
+- Requests
+- Supabase (opcional, para registrar clics de manera persistente)
+
+## Estructura del repositorio
+
+- `app.py`: aplicación principal de Streamlit.
+- `requirements.txt`: dependencias de Python.
+- `index.html`: versión HTML anterior de la landing.
+- `styles.css`: estilos de la versión HTML anterior.
+- `script.js`: interacciones de la versión HTML anterior.
+- `server.py`: servidor de la versión HTML anterior.
+
+## Ejecución local
+
+Instalá las dependencias:
 
 ```bash
-python server.py
+pip install -r requirements.txt
 ```
 
-Abrir `http://localhost:8080`.
+Iniciá la aplicación:
 
-## Métrica principal
+```bash
+streamlit run app.py
+```
 
-Cada clic sobre "Quiero ser Early Adopter" genera un evento:
-`early_adopter_cta_click`
+## Despliegue en Streamlit Community Cloud
 
-El prototipo lo guarda en SQLite y devuelve el total acumulado.
+1. Subí los archivos del proyecto a GitHub.
+2. Creá o abrí la aplicación en Streamlit Community Cloud.
+3. Seleccioná el repositorio y la rama correspondiente.
+4. Configurá `app.py` como archivo principal.
+5. Desplegá la aplicación.
 
-Para producción:
-1. integrar `/api/early-adopter-click` en el backend real;
-2. agregar rate limiting/anti-bot;
-3. almacenar únicamente los datos de atribución necesarios;
-4. mantener el mensaje de cierre del programa explícito, evitando un error técnico falso.
+## Registro de interés
 
-## Experimento recomendado
+La aplicación permite registrar clics en el botón Early Adopter.
 
-Medir:
-- visitas;
-- clics CTA;
-- tasa visita → clic;
-- origen/UTM;
-- fecha/hora;
-- eventualmente, formulario de contacto cuando el programa se habilite.
+Sin configurar Supabase, utiliza SQLite local como alternativa de prueba. Ese almacenamiento no debe considerarse persistente en Streamlit Community Cloud.
 
-No conviene presentar un "error" técnico falso: para validación es más transparente indicar que el acceso todavía no está habilitado y que el interés quedó registrado.
+Para conservar métricas entre reinicios y despliegues, configurá Supabase y las variables `SUPABASE_URL` y `SUPABASE_KEY` en los Secrets de Streamlit.
+
+## Estado de la propuesta
+
+SONIA está en desarrollo. Las funcionalidades presentadas en la landing describen la propuesta y no implican que todas estén implementadas actualmente.
