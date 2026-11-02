@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Flatory Serif";
+    src: url("./assets/fonts/flatory-serif-semi-condensed.ttf") format("ttf");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
   --forest: #0E311F;
   --night: #01111D;
@@ -297,5 +305,23 @@ footer {
 .footer-brand > .sonia-symbol {
     width: 25px;
     height: 28px;
+    color: #FFFFFF;
+}
+
+.orb-back {
+    background-color: #DDF4ED;
+}
+
+.orb-main {
+    position: relative;
+}
+
+.orb-main > .orb-symbol {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64%;
+    height: 70%;
     color: #0E311F;
 }
