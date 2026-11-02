@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Flatory Serif";
-    src: url("./assets/fonts/flatory-serif-semi-condensed.ttf") format("ttf");
+    src: url("./assets/fonts/flatory-serif-semi-condensed.ttf") format("truetype");
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -270,11 +270,11 @@ footer {
   .manifesto-mark { width: 90px; height: 90px; font-size: 52px; }
   footer { flex-direction: column; align-items: flex-start; }
 }
+
 /* ==============================
    ISOTIPO SONIA
    ============================== */
 
-/* Configuración general */
 .sonia-symbol {
     display: block;
     flex: 0 0 auto;
@@ -287,8 +287,12 @@ footer {
     color: #0E311F;
 }
 
-/* Hero */
+/* Hero: el SVG se centra dentro del círculo */
 .orb-main > .orb-symbol {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 64%;
     height: 70%;
     color: #0E311F;
@@ -308,20 +312,7 @@ footer {
     color: #FFFFFF;
 }
 
+/* Colores del sistema visual */
 .orb-back {
     background-color: #DDF4ED;
-}
-
-.orb-main {
-    position: relative;
-}
-
-.orb-main > .orb-symbol {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 64%;
-    height: 70%;
-    color: #0E311F;
 }
