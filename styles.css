@@ -262,3 +262,40 @@ footer {
   .manifesto-mark { width: 90px; height: 90px; font-size: 52px; }
   footer { flex-direction: column; align-items: flex-start; }
 }
+/* ==============================
+   ISOTIPO SONIA
+   ============================== */
+
+/* Configuración general */
+.sonia-symbol {
+    display: block;
+    flex: 0 0 auto;
+}
+
+/* Header */
+.brand > .sonia-symbol {
+    width: 34px;
+    height: 38px;
+    color: #0E311F;
+}
+
+/* Hero */
+.orb-main > .orb-symbol {
+    width: 64%;
+    height: 70%;
+    color: #0E311F;
+}
+
+/* Manifesto */
+.manifesto > .sonia-symbol {
+    width: 130px;
+    height: 143px;
+    color: #0E311F;
+}
+
+/* Footer */
+.footer-brand > .sonia-symbol {
+    width: 25px;
+    height: 28px;
+    color: #0E311F;
+}
