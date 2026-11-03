@@ -316,3 +316,121 @@ footer {
 .orb-back {
     background-color: #DDF4ED;
 }
+
+/* CONTACTO */
+
+.contact {
+    background: var(--night);
+    color: var(--snow);
+    padding: 100px 7vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.contact-intro {
+    max-width: 500px;
+}
+
+.section-label {
+    color: var(--turquoise);
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    font-weight: 600;
+}
+
+.contact-intro h2 {
+    font-family: var(--serif);
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.contact-intro p {
+    color: var(--mint);
+    line-height: 1.7;
+    max-width: 430px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: var(--mint);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px 17px;
+    border: 1px solid rgba(221, 244, 237, 0.2);
+    border-radius: 12px;
+    background: rgba(245, 255, 249, 0.06);
+    color: var(--snow);
+    font: inherit;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--turquoise);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(221, 244, 237, 0.5);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.contact-button {
+    padding: 16px 24px;
+    border: none;
+    border-radius: 50px;
+    background: var(--turquoise);
+    color: var(--night);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.contact-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.form-note {
+    color: rgba(221, 244, 237, 0.6);
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .contact {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 80px 7vw;
+    }
+
+    .contact-intro {
+        max-width: 650px;
+    }
+}
