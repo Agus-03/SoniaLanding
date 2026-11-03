@@ -180,7 +180,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   padding: 34px; border: 1px solid var(--line); border-radius: var(--radius);
   min-height: 290px; background: rgba(255,255,255,.38);
 }
-.step-number { color: var(--turquoise); font-weight: 800; font-size: 12px; letter-spacing: .12em; }
+.step-number { color: var(--turquoise); font-weight: 800; font-size: 48px; letter-spacing: .12em; }
 .step h3 { font-size: 24px; margin: 70px 0 12px; letter-spacing: -.02em; }
 .step p { color: var(--muted); margin: 0; }
 
@@ -196,7 +196,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   background: rgba(245,255,249,.78); border: 1px solid rgba(14,49,31,.08);
   border-radius: 20px; padding: 28px; min-height: 230px;
 }
-.icon { color: var(--forest); font-size: 28px; }
+.icon { color: var(--forest); font-size: 50px; }
 .value-card h3 { font-size: 21px; margin: 55px 0 8px; }
 .value-card p { color: var(--muted); margin: 0; font-size: 14px; }
 
@@ -295,7 +295,7 @@ footer {
     transform: translate(-50%, -50%);
     width: 64%;
     height: 70%;
-    color: #0E311F;
+    color: #DDF4ED;
 }
 
 /* Manifesto */
